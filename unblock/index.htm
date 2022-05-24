@@ -21,8 +21,8 @@
       var key
 
       function process() {
-        key = window.prompt("Введите ID заблокированного компьютера (указан снизу)");
         while(true) {
+          key = window.prompt("Введите ID заблокированного компьютера (указан снизу)");
           if (key !== null) {
             if (key.length !== 14) {
               wrong_format();
