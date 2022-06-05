@@ -1,0 +1,150 @@
+ body, .header, .footer, .content {
+	
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     font: 16px/1.4 'Tahoma', 'Arial', 'Helvetica', sans-serif;
+     color: #000;
+   //font-weight: 400;
+	 
+}
+.confirm {
+    // width: 473px;
+     //height: 328px;
+     //background: url(alert.png) no-repeat;
+     //margin: 0 auto;
+   //box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	 
+	 
+	 
+	
+}
+.confirm2 {
+
+display:none;
+
+}
+ .header {
+     display: flex;
+     height: 71px;
+}
+ .header .url {
+     display: block;
+     float: left;
+     background: url(header_1.png) no-repeat;
+     width: 277px;
+     height: 71px;
+}
+ .header .line {
+     display: block;
+     float: left;
+     background: url(header_2.png) repeat-x;
+     height: 71px;
+     flex: 1;
+}
+ .header .buttons {
+     display: block;
+     float: left;
+     background: url(header_3.png) no-repeat;
+     width: 120px;
+     height: 71px;
+}
+ .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     display: flex;
+     height: 40px;
+}
+ .footer .window {
+     display: block;
+     float: left;
+     background: url(footer_1.gif) no-repeat;
+     width: 194px;
+     height: 40px;
+}
+ .footer .taskbar {
+     display: block;
+     float: left;
+	 background-color: #070b11;
+    // background: url(footer_2.png) repeat-x;
+	 font: 14px/2.5 'Tahoma', 'Arial', 'Helvetica', sans-serif;
+     color: #FFF;
+     flex: 1;
+	 //width: 265px;
+     height: 40px;
+	 text-align: center;
+}
+
+
+ .footer .buttons {
+     display: block;
+     float: left;
+	 background-color: #070b11;
+    // background: url(footer_3.png) no-repeat;
+	font: 14px/2.5 'Tahoma', 'Arial', 'Helvetica', sans-serif;
+     color: #FFF;
+     width: 500px;
+    // height: 40px;
+	text-align: left;
+}
+ .content {
+     width: 947px;
+     margin: 0 auto;
+     color: #464646;
+     font-family: 'Tahoma', 'Arial', 'Helvetica', sans-serif;
+     font-size: 15px;
+	 
+	 
+//	   -webkit-touch-callout: none; /* iOS Safari */
+//		-webkit-user-select: none;   /* Chrome/Safari/Opera */
+//		-khtml-user-select: none;    /* Konqueror */
+//		-moz-user-select: none;      /* Firefox */
+//		-ms-user-select: none;       /* Internet Explorer/Edge */
+//		user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+	 
+	 
+	 
+}
+ .content .block {
+     padding-bottom: 20px;
+}
+ .content .logo {
+     width: 947px;
+     height: 160px;
+     background: url(logo.png) no-repeat;
+}
+ .firstBlock div {
+     float: left;
+}
+ .firstBlock .alert {
+     background-size: 40px 40px;
+     background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%, transparent 75%, transparent);
+     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%, transparent 75%, transparent);
+     background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%, transparent 75%, transparent);
+     box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+     font: 16px 'Open Sans';
+     width: 150px;
+     margin: 20px auto;
+     padding: 15px;
+     -moz-animation: bg-animate 5s linear infinite;
+     -webkit-animation: bg-animate 5s linear infinite;
+     -ms-animation: bg-animate 5s linear infinite;
+     animation: bg-animate 5s linear infinite;
+     background-color: tomato;
+     color: white;
+     text-align: center;
+     font-size: 18px;
+}
+ .resolution {
+     padding: 45px 0 0 30px;
+     font-size: 18px;
+}
+ 
+
+
+
+.header, .footer, .content {
+	display: none;
+}
